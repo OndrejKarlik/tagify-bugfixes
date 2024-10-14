@@ -1,3 +1,13 @@
+
+
+
+
+
+// ===========================================================================================================
+// FORKED by Ondra!  https://github.com/OndrejKarlik/tagify-bugfixes
+// ===========================================================================================================
+
+
 import { sameStr, removeCollectionProp, omit, isObject, parseHTML, removeTextChildNodes, escapeHTML, extend, concatWithoutDups, getUID, isNodeTag, injectAtCaret, placeCaretAfterNode, getSetTagData, fixCaretBetweenTags, logger } from './parts/helpers'
 import DEFAULTS from './parts/defaults'
 import _dropdown, { initDropdown } from './parts/dropdown'

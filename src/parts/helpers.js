@@ -291,6 +291,11 @@ export function getSetTagData(tagElm, data, override){
 export function placeCaretAfterNode( node ){
     if( !node || !node.parentNode ) return
 
+    // HACK 
+    if(window.getSelection().rangeCount === 0) {
+        window.getSelection().addRange(new Range());
+    }
+
     var nextSibling = node,
         sel = window.getSelection(),
         range = sel.getRangeAt(0);

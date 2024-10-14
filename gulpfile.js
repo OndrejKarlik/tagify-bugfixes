@@ -129,8 +129,6 @@ function js(done){
 }
 
 function esm(done){
-    if( opts.dev ) return done();
-
     return bundle({
         entry: 'src/tagify.js',
         outputName: 'tagify.esm.js',
